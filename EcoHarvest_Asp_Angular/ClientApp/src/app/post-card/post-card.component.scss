@@ -1,0 +1,53 @@
+@import "../app.component.scss";
+
+$content-width: 90%;
+
+img{
+  width: 100%;
+}
+
+.post-card {
+  width: 295px;
+  height: 414px;
+  margin: 20px;
+  background-color: $main-element-background-mango;
+  border-radius: 6%;
+  padding: 0 auto;
+  padding-top: 24px;
+  
+  margin-left: 16px;
+  margin-right: 17px;
+  @include transition-simple-fade;
+  &:hover {
+    background-color: $main-element-background-hover;
+  }
+}
+
+.post-price{
+  font-family: 'Montserrat';
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url('http://hb.bizmrg.com/fonts/montserrat/400.woff2') format('woff2'), url('http://hb.bizmrg.com/fonts/montserrat/400.woff') format('woff');
+  font-weight: bold;
+  color: white;
+  font-size: 20pt;
+  margin-left: 32px;
+}
+
+.post-label{
+  font-family: 'Montserrat';
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url('http://hb.bizmrg.com/fonts/montserrat/400.woff2') format('woff2'), url('http://hb.bizmrg.com/fonts/montserrat/400.woff') format('woff');
+  color: white;
+  font-weight: bold;
+  font-size: 15pt;
+  margin: 0 auto;
+  margin-left: 32px;
+}
+
+.post-info{
+  font-family: 'Montserrat';
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url('http://hb.bizmrg.com/fonts/montserrat/400.woff2') format('woff2'), url('http://hb.bizmrg.com/fonts/montserrat/400.woff') format('woff');
+  
+  color: white;
+  font-size: 12pt;
+  margin-left: 32px;
+  margin-top: 23px;
+}

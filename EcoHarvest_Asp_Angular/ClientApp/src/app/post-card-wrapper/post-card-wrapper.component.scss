@@ -1,0 +1,30 @@
+@import "../app.component.scss";
+
+.post-card-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.header-text {
+  font-family: 'Montserrat';
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url('http://hb.bizmrg.com/fonts/montserrat/400.woff2') format('woff2'), url('http://hb.bizmrg.com/fonts/montserrat/400.woff') format('woff');
+  font-size: 20pt;
+  font-weight: bold;
+  color: black;
+
+  width: 950px;
+  max-width: 950px;
+  max-height: 500px;
+  border-radius: 20px;
+
+  padding: auto;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,21 @@
+// Colors
+$main-gray: #181a1b;
+
+$maim-text-light: hsl(227, 4%, 48%);
+$main-text-price: hsl(309, 77%, 40%);
+
+$main-link: hsl(243, 57%, 50%);
+
+$main-element-background-hover: hsl(43, 96, 64);
+$main-element-background-ligth-brown: hsl(20, 16, 45);
+$main-element-background-brown: hsl(21, 12, 27);
+$main-element-background-creme: hsl(47, 44, 87);
+$main-element-background-mango: hsl(30, 75, 78);
+// Transitions
+@mixin transition-simple-fade {
+  transition: background-color 300ms;
+}
+
+.main-frame {
+  background-color: $main-element-background-creme;
+}

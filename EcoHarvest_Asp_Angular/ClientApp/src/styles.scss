@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+// @import url(app/app.component.scss);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import "modern-normalize/modern-normalize.css";
+html {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  height: 101%;
+}
+a {
+  text-decoration: none;
+}
