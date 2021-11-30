@@ -6,7 +6,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.ApiAuthorization.IdentityServer;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
 
@@ -25,6 +24,18 @@ namespace EcoHarvest_Asp_Angular.Controllers
         {
             ClientRequestParametersProvider = clientRequestParametersProvider;
             _logger = logger;
+        }
+
+        public IActionResult Index()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Index(string name, string email, string message)
+        {
+            ViewBag.Name = string.Format("Information: {0}\n{1}\n\n{2}", name, email, message);
+            return View();
         }
 
         public ProductController(AppDbContext context)
@@ -51,7 +62,7 @@ namespace EcoHarvest_Asp_Angular.Controllers
             return product;
         }
 
-        [HttpPost]
+        //[HttpPost]
         public IActionResult Post(Product product)
         {
             if (ModelState.IsValid)

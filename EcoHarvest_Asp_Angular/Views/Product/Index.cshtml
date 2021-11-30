@@ -1,0 +1,40 @@
+﻿
+@{
+    //ViewData["Title"] = "Index";
+    Layout = null;
+}
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width; charset=utf-8" />
+    <title>Index</title>
+</head>
+<body>
+    <div class="row">
+        <form method="post" asp-controller="Product" asp-action="Index">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Ваше имя</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text"></div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Ваша почта</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text"></div>
+            </div>
+            <div class="mb-3 form-group">
+                <label for="exampleFormControlTextarea1">Ваше сообщение</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary" style="margin-bottom: 56px;" href="api/products/post">Отправить</button>
+            <hr />
+            @ViewBag.Name
+        </form>
+    </div>
+</body>
+</html>

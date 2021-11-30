@@ -2,13 +2,14 @@
 
 .category-card-wrapper {
   margin-bottom: 100px;
+  padding-bottom:20px;
 }
 
 .row {
   background-color: $main-element-background-mango;
   flex-wrap: wrap;
   max-width: 950px;
-  max-height: 500px;
+  //max-height: 500px;
   border-radius: 20px;
   margin: auto;
   padding-right: 5%;
